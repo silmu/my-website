@@ -1,0 +1,46 @@
+.first-box-container {
+    width: 200px;
+    height: 100px;
+    background-color: rgb(75, 9, 129);
+    position: absolute;
+    left: 10px;
+    top: 110px;
+    border-style: groove;
+    border-width: 5px;
+    border-color: thistle;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+.second-box-container {
+    width: 200px;
+    height: 100px;
+    background-color: #f3a8ed;
+    position: absolute;
+    left: 220px;
+    top: 110px;
+    border-style: dotted;
+    border-width: 5px;
+    border-color: rgb(58, 20, 58);
+    text-transform: uppercase;
+    text-align: center
+  }
+  
+.third-box-container {
+    width: 200px;
+    height: 100px;
+    background-color: rgb(92, 226, 215);
+    position: absolute;
+    left: 430px;
+    top: 110px;
+    border-style: ridge;
+    border-width: 5px;
+    border-color: rgb(106, 159, 228);
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+.container {
+    width: 700px;
+    height: 500px;
+}

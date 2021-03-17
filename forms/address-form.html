@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>My website</title>
+	<title>Address form</title>
 	<link rel="stylesheet" href="style.css">
 	<style>
 		form {
@@ -72,27 +72,29 @@
 	</style>
 </head>
 
-<body>
-	<h1>Hello again!</h1>
-	<a href="index.html"> Home page </a>
-	<form action="/my-handling-form-page" method="post">
-		<ul>
-		 <li>
-		   <label for="name">Name:</label>
-		   <input type="text" id="name" name="user_name">
-		 </li>
-		 <li>
-		   <label for="mail">E-mail:</label>
-		   <input type="email" id="mail" name="user_email">
-		 </li>
-		 <li>
-		   <label for="msg">Message:</label>
-		   <textarea id="msg" name="user_message"></textarea>
-		 </li>
-		 <li class="button">
-			<button type="submit">Send your message</button>
-		  </li>
-		</ul>
-	   </form>
-</body>
+    <body>
+            <h1>Enter your information, human</h1>
+            <p><a href="../index.php"> Home page </a></p>
+        <form action="preview.php" method="post">
+            <ul>
+                <li><label>Name: <input type="text" name="name"></label><br>
+                </li>
+                <li><label>Address: <input type="text" name="address"></label><br>
+                </li>
+                <li><label>Postal code:<input type="text" name="postcode"></label>
+                </li>
+                <li><label>Region:<input type="text" name="region"></label><br>
+                </li>
+                <li></li><label>Email:<input type="mail" name="email"></label><br>
+                </li>
+                <br>
+                <li class="button">
+                <button type="submit" value="Submit">Submit</button>
+                </li>
+                <li class="button">
+                <button type="reset" value="Reset">Reset</button>
+                 </li>
+            </ul>
+        </form>
+    </body>
 </html>

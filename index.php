@@ -1,19 +1,21 @@
+<?php
+$v = 1;
+if (isset($_COOKIE["visits"])) {
+  $v = $_COOKIE["visits"] + 1;
+}
+setcookie("visits", $v, time() + 3600);
+?>
 
 <!DOCTYPE html>
-<!-- This tag specifies the type of html the document is written
-  in-->
+
 <html>
-<!-- This is a root element. It's the block that contains all the
- code of the site -->
+
 <head>
-  <!-- This block element contains metadata about the website not
-  shown to the user. E.g. key words, links to CSS files -->
+  
   <meta charset="utf-8">
-  <!-- This element defines the character set. utf-8 can handle nordic
-  letters -->
+
   <title>My website</title>
-  <!-- Name of the site that is shown in the tab and in a
-    bookmark -->
+  
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -22,8 +24,16 @@
   <!--Do the exercises here-->
   <h1 id="hello">Hello</h1>
 <h2 class="second_header">This is my website</h2>
-<p><a href="index2.html"> Form practice </a></p>
+
 <p><a href="positions.html"> Positioning practice </a></p>
+
+<p><a href="forms/feedback-form.html"> Feedback form practice </a></p>
+<p><a href="forms/address-form.html"> Address form practice </a></p>
+<p><a href="forms/interests-form.php"> Interests form practice </a></p>
+<p><a href="forms/order-a-drink.php"> Order a drink </a></p>
+<p><a href="forms/guestbook.html"> Send a message </a></p>
+<p><a href="forms/chat/form.php"> Guestbook </a></p>
+
 <h3>The learning goals for this course are in essence to</h3>
 <ul>
   <li class="list">Learn HTML</li>
@@ -43,7 +53,17 @@
   <img src="assets/Ipad_wallpaper_misori.art.jpg" 
   alt="Stars and clouds" height="430" width="430"/>
   <p><i>"Stars and clouds" by @misori.art (2019)</i></p>
-  <p><b><i>Testing again</i></b></p>
+
+
+    <p>
+      You have opened this page
+      <strong><?= $v ?></strong> times recently!
+    </p>
+
+    <p>
+      <a href="visits.php">Reload page</a>.
+    </p>
+ 
 </body>
 
 </html>
